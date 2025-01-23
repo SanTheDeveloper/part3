@@ -21,6 +21,7 @@ app.use(
 
 app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Enable JSON parsing for incoming requests
+app.use(express.static("dist")); // Serve static files from the "dist" directory
 
 // Hardcoded phonebook data
 let persons = [
